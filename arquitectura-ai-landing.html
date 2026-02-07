@@ -20,7 +20,18 @@
             background-color: var(--primary-dark);
             color: var(--text-light);
             line-height: 1.6;
+            
+            /* WOW Background Animation */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assets/hero_ai_arch.png);
+            background-size: 200% 200%;
+            animation: gradient-move 30s ease infinite;
         }
+        @keyframes gradient-move {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+        
         /* HERO SECTION */
         .hero {
             position: relative;
@@ -165,27 +176,59 @@
         </div>
     </div>
 
-    <div id="diferencial" class="agent-section" style="background-color: #0b111c; border-top: 5px solid var(--accent-magenta);">
-        <h3>EL DIFERENCIAL VIBECODER PRO: FOCO EN LATAM</h3>
-        <p>No somos una solución genérica global. Entendemos la dinámica de costos, la velocidad de obra y las normativas de Ecuador, Colombia y Perú. Nuestro enfoque está en generar **ROAS (Retorno del Agente sobre la Arquitectura)**, optimizando la inversión y asegurando que cada agente trabaje para sus resultados locales. Por eso, somos la única opción de IA que habla su idioma de negocio y cumple con sus códigos de construcción.</p>
-    </div>
-
     <div id="services" class="section">
         <h2 style="text-align: center;">Nuestros Agentes de IA: Soluciones Reales</h2>
         <div class="grid-3">
             <div class="service-card">
-                <h3>Agente de Planificación Rápida</h3>
-                <p>Genera planos y modelos 3D basados en parámetros en minutos, no en días. Acelera la fase conceptual y de cotización.</p>
+                <h3>Agente de Ventas & Estrategia</h3>
+                <p><strong>GANANCIA: TIEMPO X10.</strong> El fin de la parálisis: Automatizamos el análisis de mercado y la segmentación de clientes, dándote una estrategia de ventas clara en minutos, no meses.</p>
             </div>
             <div class="service-card">
-                <h3>Agente de Eficiencia (Budget & Timing)</h3>
-                <p>Calcula automáticamente la optimización de materiales y el cronograma de obra. Minimiza el desperdicio y garantiza entregas a tiempo.</p>
+                <h3>Agente de Automatización (Marketing & Gestión)</h3>
+                <p><strong>GANANCIA: MARGEN ÓPTIMO.</strong> Flujo de Trabajo a Prueba de Fugas: Automatizamos tus procesos internos (cotizaciones, reportes, seguimiento), reduciendo el costo operativo y liberando a tu equipo para vender.</p>
             </div>
             <div class="service-card">
-                <h3>Agente de Normativas (Latam Focus)</h3>
-                <p>Verifica su diseño contra las normativas de construcción locales (Ecuador, Colombia, Perú, etc.) en tiempo real, evitando errores costosos.</p>
+                <h3>Agente de Escalabilidad (LATAM Focus)</h3>
+                <p><strong>GANANCIA: CUMPLIMIENTO ZERO RIESGO.</strong> El Agente Local/Global: Un agente especializado en compliance y expansión a LATAM, asegurando que tu negocio cumpla con las regulaciones de expansión regional sin costosos errores legales.</p>
             </div>
         </div>
+    </div>
+
+    <!-- SECCIÓN DE PRICING -->
+    <div id="pricing" class="section" style="background-color: #0b111c; padding-bottom: 40px;">
+        <h2 style="text-align: center;">PAQUETES DE ARQUITECTURA AI</h2>
+        <div class="grid-3" style="gap: 30px;">
+            <div class="service-card" style="border-top: 5px solid var(--accent-magenta); text-align: center;">
+                <h3>STARTER: Visión AI</h3>
+                <p class="price" style="font-size: 2.5em; font-weight: 700; color: var(--accent-cyan); margin: 15px 0;">$2,500</p>
+                <p>Implementación del Agente de Planificación Rápida, con soporte inicial y configuración de parámetros esenciales.</p>
+                <a href="https://wa.me/593999793094?text=Quiero%20contratar%20el%20Paquete%20STARTER%3A%20Visi%C3%B3n%20AI%20de%20%242500." target="_blank" class="cta-whatsapp" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px;">
+                    <span class="whatsapp-icon">✅</span> CONTRATAR
+                </a>
+            </div>
+            <div class="service-card" style="border-top: 5px solid var(--accent-cyan); text-align: center;">
+                <h3>PRO: Flujo Autómata</h3>
+                <p class="price" style="font-size: 2.5em; font-weight: 700; color: var(--accent-cyan); margin: 15px 0;">$3,500</p>
+                <p>Paquete STARTER más el Agente de Eficiencia (Budget & Timing). Optimización de costos y cronogramas, esencial para obras medianas.</p>
+                <a href="https://wa.me/593999793094?text=Quiero%20contratar%20el%20Paquete%20PRO%3A%20Flujo%20Aut%C3%B3mata%20de%20%243500." target="_blank" class="cta-whatsapp" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px;">
+                    <span class="whatsapp-icon">🚀</span> CONTRATAR
+                </a>
+            </div>
+            <div class="service-card" style="border-top: 5px solid var(--accent-magenta); text-align: center;">
+                <h3>ELITE: Máximo ROAS</h3>
+                <p class="price" style="font-size: 2.5em; font-weight: 700; color: var(--accent-cyan); margin: 15px 0;">$5,000</p>
+                <p>Implementación completa: STARTER, PRO y el Agente de Normativas (Latam Focus). Automatización 360 y cumplimiento legal.</p>
+                <a href="https://wa.me/593999793094?text=Quiero%20contratar%20el%20Paquete%20ELITE%3A%20M%C3%A1ximo%20ROAS%20de%20%245000." target="_blank" class="cta-whatsapp" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px;">
+                    <span class="whatsapp-icon">👑</span> CONTRATAR
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- FIN SECCIÓN DE PRICING -->
+
+    <div id="diferencial" class="agent-section" style="background-color: #0b111c; border-top: 5px solid var(--accent-magenta);">
+        <h3>EL DIFERENCIAL VIBECODER PRO: FOCO EN LATAM</h3>
+        <p>No somos una solución genérica global. Entendemos la dinámica de costos, la velocidad de obra y las normativas de Ecuador, Colombia y Perú. Nuestro enfoque está en generar **ROAS (Retorno del Agente sobre la Arquitectura)**, optimizando la inversión y asegurando que cada agente trabaje para sus resultados locales. Por eso, somos la única opción de IA que habla su idioma de negocio y cumple con sus códigos de construcción.</p>
     </div>
 
     <div class="agent-section">
