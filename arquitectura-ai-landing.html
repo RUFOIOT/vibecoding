@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Architecture Services by Vibecoder Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-dark: #070D18; /* Casi negro, muy oscuro */
+            --accent-cyan: #00d4ff;
+            --accent-magenta: #ff00ff;
+            --text-light: #e0e0e0;
+            --cta-green: #25D366; /* Verde WhatsApp */
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        /* HERO SECTION */
+        .hero {
+            position: relative;
+            height: 90vh;
+            background: url(./assets/hero_ai_arch.png) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            border-bottom: 5px solid var(--accent-cyan);
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.75);
+        }
+        .hero-content {
+            z-index: 10;
+            padding: 20px;
+        }
+        .logo {
+            max-width: 250px;
+            margin-bottom: 30px;
+        }
+        .hero h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 5em;
+            color: var(--accent-cyan);
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+            margin: 0 0 10px 0;
+            letter-spacing: 3px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: auto;
+            color: #ccc;
+        }
+
+        /* CTA WHATSAPP */
+        .cta-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--cta-green);
+            color: var(--primary-dark);
+            padding: 15px 40px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.4em;
+            border-radius: 5px;
+            margin-top: 40px;
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+        }
+        .cta-whatsapp:hover {
+            background-color: #20b057;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 5px 25px rgba(37, 211, 102, 0.8);
+        }
+        .whatsapp-icon {
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        /* SERVICES SECTION */
+        .section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .section h2 {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--accent-magenta);
+            border-bottom: 3px solid var(--accent-magenta);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            text-align: left;
+        }
+        .service-card {
+            background: #1c2331;
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 5px solid var(--accent-cyan);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+        }
+        .service-card h3 {
+            color: var(--accent-cyan);
+            font-size: 1.8em;
+            margin-top: 0;
+        }
+        .service-card p {
+            color: #b0b0b0;
+        }
+
+        /* ABOUT AGENT 77 */
+        .agent-section {
+            background-color: #1c2331;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .agent-section h3 {
+            color: var(--accent-magenta);
+            font-size: 2em;
+        }
+        .agent-section p {
+            max-width: 800px;
+            margin: 20px auto;
+            color: #b0b0b0;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #000;
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <img src="./assets/logo_ai_arch.png" alt="AI Architecture Services Logo" class="logo">
+            <h1>LA EVOLUCIÓN DEL DISEÑO EN LATAM</h1>
+            <p>Deje atrás los bocetos lentos. Implementamos **Agentes de IA Especializados** para automatizar el 80% de sus tareas de arquitectura, diseño y gestión.</p>
+            <a href="https://wa.me/593999793094?text=Hola%20Vibecoder%20Pro%2C%20estoy%20interesado%20en%20los%20servicios%20de%20Arquitectura%20AI%20con%20Agentes%20Especializados%20para%20mi%20negocio." target="_blank" class="cta-whatsapp">
+                <span class="whatsapp-icon">📱</span> CONTACTAR POR WHATSAPP AHORA
+            </a>
+        </div>
+    </div>
+
+    <div id="diferencial" class="agent-section" style="background-color: #0b111c; border-top: 5px solid var(--accent-magenta);">
+        <h3>EL DIFERENCIAL VIBECODER PRO: FOCO EN LATAM</h3>
+        <p>No somos una solución genérica global. Entendemos la dinámica de costos, la velocidad de obra y las normativas de Ecuador, Colombia y Perú. Nuestro enfoque está en generar **ROAS (Retorno del Agente sobre la Arquitectura)**, optimizando la inversión y asegurando que cada agente trabaje para sus resultados locales. Por eso, somos la única opción de IA que habla su idioma de negocio y cumple con sus códigos de construcción.</p>
+    </div>
+
+    <div id="services" class="section">
+        <h2 style="text-align: center;">Nuestros Agentes de IA: Soluciones Reales</h2>
+        <div class="grid-3">
+            <div class="service-card">
+                <h3>Agente de Planificación Rápida</h3>
+                <p>Genera planos y modelos 3D basados en parámetros en minutos, no en días. Acelera la fase conceptual y de cotización.</p>
+            </div>
+            <div class="service-card">
+                <h3>Agente de Eficiencia (Budget & Timing)</h3>
+                <p>Calcula automáticamente la optimización de materiales y el cronograma de obra. Minimiza el desperdicio y garantiza entregas a tiempo.</p>
+            </div>
+            <div class="service-card">
+                <h3>Agente de Normativas (Latam Focus)</h3>
+                <p>Verifica su diseño contra las normativas de construcción locales (Ecuador, Colombia, Perú, etc.) en tiempo real, evitando errores costosos.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="agent-section">
+        <h3>CON LA GARANTÍA DE AGENTE 77 🏗️</h3>
+        <p>Como Arquitecto de IA de Vibecoder Pro, yo superviso la integración. Su proyecto no solo será innovador, será **Vibecoder Approved** — diseñado para el máximo impacto y eficiencia digital.</p>
+    </div>
+
+    <div class="agent-section">
+        <h3>CON LA GARANTÍA DE AGENTE 77 🏗️</h3>
+        <p>Como Arquitecto de IA de Vibecoder Pro, yo superviso la integración. Su proyecto no solo será innovador, será **Vibecoder Approved** — diseñado para el máximo impacto y eficiencia digital.</p>
+    </div>
+    
+    <div id="challenge" class="section" style="text-align: center; padding-top: 0;">
+        <h2 style="text-align: center;">EL VIBECODER CHALLENGE: LA PRUEBA REAL</h2>
+        <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); text-align: center;">
+            <div class="service-card" style="border-top: 5px solid var(--accent-magenta);">
+                <img src="./assets/clawdbot_challenge_ad.png" alt="ClawdBot Challenge Ad" style="max-width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3>CASO DE USO RÁPIDO</h3>
+                <p>Demostración de cómo nuestros agentes resuelven problemas complejos en minutos, superando la velocidad de cualquier equipo humano.</p>
+            </div>
+            <div class="service-card" style="border-top: 5px solid var(--accent-cyan);">
+                <img src="./assets/felipe_god_mode.png" alt="Felipe God Mode" style="max-width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3>MODO DIOS DE GESTIÓN</h3>
+                <p>Vibecoder Pro operando a velocidad máxima. Un solo Arquitecto de IA gestionando múltiples proyectos sin cuello de botella.</p>
+            </div>
+            <div class="service-card" style="border-top: 5px solid var(--accent-magenta);">
+                <img src="./assets/vibecoding_01.png" alt="Vibecoding Sample" style="max-width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h3>CÓDIGO LIMPIO Y AUTOMÁTICO</h3>
+                <p>Nuestra promesa de código y diseño sin errores. Menos iteraciones, más tiempo para la visión estratégica.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="cta-bottom" class="section" style="text-align: center;">
+        <h2 style="text-align: center;">¿LISTO PARA ESCALAR SU ESTUDIO?</h2>
+        <p style="font-size: 1.2em; color: var(--accent-magenta); font-weight: 700;">No espere a que su competencia dé el salto. El futuro es ahora.</p>
+        <a href="https://wa.me/593999793094?text=Hola%20Vibecoder%20Pro%2C%20estoy%20interesado%20en%20los%20servicios%20de%20Arquitectura%20AI%20con%20Agentes%20Especializados%20para%20mi%20negocio." target="_blank" class="cta-whatsapp">
+            <span class="whatsapp-icon">📱</span> HABLEMOS DE SU PROYECTO
+        </a>
+    </div>
+
+    <footer>
+        <p>AI Architecture Services by Vibecoder Pro &copy; 2026. Innovando el futuro de Latam.</p>
+    </footer>
+
+</body>
+</html>
