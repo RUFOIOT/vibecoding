@@ -7,8 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-dark: #070D18; /* Casi negro, muy oscuro */
-            --accent-cyan: #00d4ff;
             --accent-magenta: #ff00ff;
             --text-light: #e0e0e0;
             --cta-green: #25D366; /* Verde WhatsApp */
@@ -26,7 +24,7 @@
         .hero {
             position: relative;
             height: 90vh;
-            background: url(./assets/hero_ai_arch.png) no-repeat center center/cover;
+            /* background: url(./assets/hero_ai_arch.png) no-repeat center center/cover; */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -171,10 +169,11 @@
     </style>
 </head>
 <body>
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--primary-dark); z-index: 0;"></div>
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <img src="./assets/logo_3d_chrome.png" alt="AI Architecture Services Logo" class="logo">
+            <img src="./assets/logo_3d_holo.png" alt="AI Architecture Services Logo" class="logo">
             <h1>LA IA QUE TRABAJA 24/7 POR TI</h1>
             <p>Deje atrás los bocetos lentos. Implementamos **Agentes de IA Especializados** para automatizar el 80% de sus tareas de arquitectura, diseño y gestión.</p>
             <a href="https://wa.me/593999793094?text=Hola%20Vibecoder%20Pro%2C%20estoy%20interesado%20en%20los%20servicios%20de%20Arquitectura%20AI%20con%20Agentes%20Especializados%20para%20mi%20negocio." target="_blank" class="cta-whatsapp">
@@ -275,6 +274,68 @@
     <footer>
         <p>AI Architecture Services by Vibecoder Pro &copy; 2026. Innovando el futuro de Latam.</p>
     </footer>
+
+    <!-- Scripts para Fondo Dinámico (Particles.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": { "enable": true, "value_area": 800 }
+                },
+                "color": { "value": "#00d4ff" }, /* Color Cyan del tema */
+                "shape": {
+                    "type": "circle",
+                    "stroke": { "width": 0, "color": "#000000" },
+                    "polygon": { "nb_sides": 5 }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ff00ff", /* Color Magenta del tema */
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 140, "line_linked": { "opacity": 1 } },
+                    "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 },
+                    "repulse": { "distance": 200, "duration": 0.4 },
+                    "push": { "particles_nb": 4 },
+                    "remove": { "particles_nb": 2 }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 
 </body>
 </html>
