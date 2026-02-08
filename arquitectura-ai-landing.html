@@ -20,19 +20,9 @@
             background-color: var(--primary-dark);
             color: var(--text-light);
             line-height: 1.6;
-            
-            /* WOW Background Animation */
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assets/hero_ai_arch.png);
-            background-size: 200% 200%;
-            animation: gradient-move 30s ease infinite;
-        }
-        @keyframes gradient-move {
-            0% {background-position: 0% 50%;}
-            50% {background-position: 100% 50%;}
-            100% {background-position: 0% 50%;}
         }
         
-        /* HERO SECTION */
+        /* Restablecer Hero Section y añadir efecto Neón/Glitch */
         .hero {
             position: relative;
             height: 90vh;
@@ -57,9 +47,13 @@
             padding: 20px;
         }
         .logo {
-            max-width: 250px;
-            margin-bottom: 30px;
+            max-width: 90%; 
+            max-height: 250px; 
+            margin: 0 auto 30px auto; 
+            filter: drop-shadow(0 0 10px var(--accent-cyan)); /* Efecto extra para el logo 3D */
         }
+        
+        /* Animación Neón para Títulos H1/H2 */
         .hero h1 {
             font-family: 'Bebas Neue', cursive;
             font-size: 5em;
@@ -67,7 +61,14 @@
             text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
             margin: 0 0 10px 0;
             letter-spacing: 3px;
+            animation: neon-flicker 2s infinite alternate; /* Nuevo efecto */
         }
+        @keyframes neon-flicker {
+            0% { opacity: 1; text-shadow: 0 0 10px var(--accent-cyan); }
+            50% { opacity: 0.95; text-shadow: 0 0 8px var(--accent-cyan); }
+            100% { opacity: 1; text-shadow: 0 0 15px var(--accent-cyan); }
+        }
+        
         .hero p {
             font-size: 1.5em;
             max-width: 800px;
@@ -114,7 +115,13 @@
             border-bottom: 3px solid var(--accent-magenta);
             padding-bottom: 10px;
             display: inline-block;
+            animation: neon-flicker-magenta 3s infinite alternate; /* Nuevo efecto para h2 */
         }
+        @keyframes neon-flicker-magenta {
+            0% { text-shadow: 0 0 8px var(--accent-magenta); }
+            100% { text-shadow: 0 0 12px var(--accent-magenta); }
+        }
+
         .grid-3 {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -126,7 +133,7 @@
             padding: 30px;
             border-radius: 10px;
             border-top: 5px solid var(--accent-cyan);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.2); /* Sombra suave para las tarjetas */
         }
         .service-card h3 {
             color: var(--accent-cyan);
@@ -194,6 +201,11 @@
         </div>
     </div>
 
+    <div id="diferencial" class="agent-section" style="background-color: #0b111c; border-top: 5px solid var(--accent-magenta);">
+        <h3>EL DIFERENCIAL VIBECODER PRO: FOCO EN LATAM</h3>
+        <p>No somos una solución genérica global. Entendemos la dinámica de costos, la velocidad de obra y las normativas de Ecuador, Colombia y Perú. Nuestro enfoque está en generar **ROAS (Retorno del Agente sobre la Arquitectura)**, optimizando la inversión y asegurando que cada agente trabaje para sus resultados locales. Por eso, somos la única opción de IA que habla su idioma de negocio y cumple con sus códigos de construcción.</p>
+    </div>
+    
     <!-- SECCIÓN DE PRICING -->
     <div id="pricing" class="section" style="background-color: #0b111c; padding-bottom: 40px;">
         <h2 style="text-align: center;">PAQUETES DE ARQUITECTURA AI</h2>
@@ -225,11 +237,6 @@
         </div>
     </div>
     <!-- FIN SECCIÓN DE PRICING -->
-
-    <div id="diferencial" class="agent-section" style="background-color: #0b111c; border-top: 5px solid var(--accent-magenta);">
-        <h3>EL DIFERENCIAL VIBECODER PRO: FOCO EN LATAM</h3>
-        <p>No somos una solución genérica global. Entendemos la dinámica de costos, la velocidad de obra y las normativas de Ecuador, Colombia y Perú. Nuestro enfoque está en generar **ROAS (Retorno del Agente sobre la Arquitectura)**, optimizando la inversión y asegurando que cada agente trabaje para sus resultados locales. Por eso, somos la única opción de IA que habla su idioma de negocio y cumple con sus códigos de construcción.</p>
-    </div>
 
     <div class="agent-section">
         <h3>CON LA GARANTÍA DE AGENTE 77 🏗️</h3>
