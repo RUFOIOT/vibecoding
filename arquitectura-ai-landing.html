@@ -51,8 +51,6 @@
             margin: 0 auto 15px auto; 
             filter: drop-shadow(0 0 15px var(--accent-cyan)) drop-shadow(0 0 25px var(--accent-magenta));
             animation: logo-breath 5s infinite ease-in-out alternate;
-            opacity: 0.9;
-            mix-blend-mode: screen;
         }
 
         @keyframes logo-breath {
@@ -309,7 +307,7 @@
         <h2 style="text-align: center; color: var(--accent-magenta);">INSCRIPCIÓN & CONTACTO</h2>
         <p style="color: #ccc; max-width: 600px; margin: 20px auto 40px auto;">Inscríbete al curso o déjanos tu contacto para una sesión de diagnóstico inicial.</p>
         
-        <form style="max-width: 500px; margin: auto; text-align: left;">
+        <form name="inscripcion_academy" data-netlify="true" style="max-width: 500px; margin: auto; text-align: left;">
             <div style="margin-bottom: 20px;">
                 <label for="name" style="display: block; margin-bottom: 5px; color: var(--accent-cyan);">Nombre Completo</label>
                 <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid var(--accent-magenta); background: var(--primary-dark); color: var(--text-light); border-radius: 5px;" required>
