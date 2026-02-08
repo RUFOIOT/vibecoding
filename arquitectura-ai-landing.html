@@ -175,6 +175,36 @@
             font-size: 0.8em;
             color: #555;
         }
+
+        /* RESPONSIVENESS: OPTIMIZACIÓN MOBILE */
+        @media (max-width: 768px) {
+            .hero {
+                height: 70vh; /* Reducción de la altura del contenedor principal */
+            }
+            .hero h1 {
+                font-size: 3em; /* Ajuste de Título */
+            }
+            .hero p {
+                font-size: 1.1em;
+            }
+            .logo {
+                max-height: 150px; /* Reducción de 250px a 150px para caber */
+                margin-bottom: 5px; /* Reducción de margen */
+            }
+            .cta-whatsapp {
+                font-size: 1.1em;
+                padding: 10px 20px;
+            }
+            .section {
+                padding: 40px 10px; /* Reducción de padding de secciones */
+            }
+            .grid-3 {
+                grid-template-columns: 1fr; /* Una columna en móvil */
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+        }
     </style>
 </head>
 <body>
