@@ -206,7 +206,7 @@
     </style>
 </head>
 <body>
-    <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--primary-dark); z-index: 0;"></div>
+    <div id="particles-js" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--primary-dark); z-index: 0; pointer-events: none;"></div>
     <div class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -308,6 +308,8 @@
         <p style="color: #ccc; max-width: 600px; margin: 20px auto 40px auto;">Inscríbete al curso o déjanos tu contacto para una sesión de diagnóstico inicial.</p>
         
         <form name="inscripcion_academy" data-netlify="true" style="max-width: 500px; margin: auto; text-align: left;">
+            <input type="hidden" name="form-name" value="inscripcion_academy" /> <!-- Campo oculto requerido por Netlify -->
+            <input type="hidden" name="_next" value="/arquitectura-ai-landing.html?success=true" /> <!-- Redirección después del envío -->
             <div style="margin-bottom: 20px;">
                 <label for="name" style="display: block; margin-bottom: 5px; color: var(--accent-cyan);">Nombre Completo</label>
                 <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid var(--accent-magenta); background: var(--primary-dark); color: var(--text-light); border-radius: 5px;" required>
@@ -366,7 +368,7 @@
                 <h3>VIBECODER AGENT PDF</h3>
                 <p class="price" style="font-size: 2.5em; font-weight: 700; color: var(--accent-cyan); margin: 15px 0;">$20 USD</p>
                 <p>Guía de <strong>configuración completa en PDF</strong> para instalar y optimizar tu propio Agente de IA (OpenClaw, etc.).</p>
-                <a href="#inscripcion-form" class="cta-whatsapp" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px;">
+                <a href="https://wa.me/593999793094" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px; display: inline-flex; align-items: center; background-color: var(--cta-green); color: var(--primary-dark); text-decoration: none; font-weight: 700; border-radius: 5px; box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);">
                     <span class="whatsapp-icon">📄</span> OBTENER GUÍA PDF
                 </a>
             </div>
@@ -374,7 +376,7 @@
                 <h3>1:1 ACADEMY (14 DÍAS)</h3>
                 <p class="price" style="font-size: 2.5em; font-weight: 700; color: var(--accent-cyan); margin: 15px 0;">$999 USD</p>
                 <p>Mentoría 1:1 de 14 días. Te configuramos, entrenamos y optimizamos tu agente. **Garantía Modo Dios.**</p>
-                <a href="#inscripcion-form" class="cta-whatsapp" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px;">
+                <a href="https://wa.me/593999793094" style="font-size: 1.1em; padding: 10px 20px; margin-top: 20px; display: inline-flex; align-items: center; background-color: var(--cta-green); color: var(--primary-dark); text-decoration: none; font-weight: 700; border-radius: 5px; box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);">
                     <span class="whatsapp-icon">👑</span> RESERVAR MENTORÍA
                 </a>
             </div>
@@ -457,4 +459,4 @@
     </script>
 
 </body>
-</html>
+</html><!-- Last updated by Agente 77: Netlify Forms and WhatsApp CTAs integrated. -->
